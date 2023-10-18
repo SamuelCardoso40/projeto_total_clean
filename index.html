@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total Clean</title>
+    <link rel="stylesheet" href="styletotalclean.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;1,100;1,200;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <header id="job-description">
+        <div id="disclaimer">       
+            <h2><img id="logo" src="logo.png" alt="totalclean"></h2>
+            <p class="about-job">
+                "Limpar e cuidar dos estofados é um abraço de frescor e conforto, que 
+                transforma qualquer ambiente em um refúgio impecável para relaxar e renovar."
+            </p>
+        </div>
+        <div id="budget-form">
+            <p>Faça seu orçamento sem compromisso pelo formulário abaixo</p>
+            <form id="meuFormulario">
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" placeholder="Digite seu nome"></imput>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" placeholder="Digite seu E-mail"></imput>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefone</label>
+                    <input type="text" name="phone" placeholder="Número com WhatsApp"/>
+                </div>
+                <div class="form-group">
+                    <label for="servico">Principal interesse</label>
+                    <select name="servico">
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="sofa">Sofá</option>
+                        <option value="colchao">Colchão</option>
+                        <option value="cadeira">Cadeiras</option>
+                        <option value="tapete">Tapete</option>
+                        <option value="outros">Outros</option>
+                    </select>                  
+                </div>
+                <button type="button" class="btn" onclick="salvarDados()">Enviar orçamento</button>
+            </form>
+        </div>           
+    </header>
+    <section id="key-benefits">
+        <h2>Conheça os benefícios:</h2>
+        <div class="benefits">
+            <div class="benefit">
+                <div id="benefit-1" class="benefit-img"></div>
+                <p>Previne alergias e vários problemas respiratórios</p>
+            </div>        
+            <div class="benefit">
+                <div id="benefit-2" class="benefit-img"></div>
+                <p>Conserva seu estofado por mais tempo</p>
+            </div>
+            <div class="benefit">
+                <div id="benefit-3" class="benefit-img"></div>
+                <p>Evita mau cheiro e sujeira</p>
+            </div>
+        </div>
+    </section>
+    <section id="location">
+        <div id="adress">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div id="adress-details">
+                <p>Atendimento em toda a região Noroeste de Curitiba sem taxa de deslocamento</p>
+                <p>Atendemos também em toda região metropolitana de Curitiba</p>                
+            </div>
+        </div>
+        <div id="about_location">
+            <h3>Local de atendimento</h3>
+            <p>O serviço é realizado em sua residencia e não existe perigo de explosão
+                ou manchas no estofado ou no seu piso</p>
+        </div>
+    </section>
+    <section id="details">
+        <div class="detail" id="detail-1">
+            <img src="img3.jpg" alt="Sofá azul com almofadas amarelas">
+            <div class="detail-description">
+                <h3>Veja a satisfação de nossos clientes:</h3>
+                <ul>
+                    <li><p>"Maravilhoso! Serviço de qualidade, recomendo!</p><p2>Lucia Tavares, Bonito-MS</p2></li>
+                    <li><p>"Sensacional! Ficou como que novo! Amei!!, </p><p2>Geni Derocco, Japurá-PR</p2></li>
+                    <li><p>"Achava que nem tinha mais o que fazer! Deixaram limpo e cheiroso! </p><p2>Karoline Abreu, Japurá-PR</p2></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="cta">        
+        <h3>Gostou? Então entre em contato pelos canais:</h3>        
+        <div class="contacts">  
+            <div class="contact">                      
+                <div class="contact-1">
+                    <i class="bi bi-telephone-fill"></i><i class="bi bi-whatsapp"></i>
+                    <p>(41) 99292-7765</p>                                
+                </div>       
+                <div class="contact-1">
+                    <i class="bi bi-instagram"></i>
+                    <p>@totalcleanlimpeza</p>                                
+                </div>
+            </div>
+        </div>
+       
+
+    </section>
+    <footer>
+        <p><span class="bold">Total Clean</span>&copy; 2023</p>
+    </footer> 
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/FileSaver.min.js"></script>
+    <script type="text/javascript" src="FileSaver.js"></script>
+  </body>
+</html>
